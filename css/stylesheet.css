@@ -1,0 +1,60 @@
+body {
+	background-color: #231F20; /*Shade of black from the website */
+	font-family: Josefin Sans;
+	color: #231F20;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #231F20;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	border-bottom: 1px #231F20;
+}
+
+li a:hover {
+    text-decoration: underline;
+	border-bottom-color: #F2D454; /*Yellow color that matches the sparkstone logo color */
+}
+
+h1 {
+	font-size: 32px;
+}
+
+div.bio{
+	font-size: 32px;
+}
+
+p{
+	font-size: 20px;
+}
+
+div.main{
+	background-color: white;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.banner-img {
+    width: 100%;
+}
+	
