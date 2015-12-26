@@ -1,6 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+* {
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 0px;
+}
+
 body {
 	background-color: #231F20; /*Shade of black from the website */
-	font-family: Josefin Sans;
 	color: #231F20;
 }
 
@@ -22,39 +28,114 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-	border-bottom: 1px #231F20;
 }
 
 li a:hover {
     text-decoration: underline;
 	border-bottom-color: #F2D454; /*Yellow color that matches the sparkstone logo color */
 }
-
 h1 {
+	font-family: 'Josefin Sans';
 	font-size: 32px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 26.4px;
+	border-bottom-color: #F2D454; 
+	border-bottom-style: solid;
+	margin: 15px;
+	padding-bottom: 10px;
 }
-
-div.bio{
-	font-size: 32px;
+h3 {
+	font-family: 'Josefin Sans';
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 15.4px;
 }
-
-p{
+p {
+	font-family: 'Josefin Sans';
 	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	margin: 20px;
 }
-
-div.main{
+blockquote {
+	font-family: 'Josefin Sans';
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: 'Josefin Sans';
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+#main1{
+	height: 300px;
 	background-color: white;
+	padding:8%;
+	margin: 0px;
+}
+#main2{
+	height: 300px;
+	background-color: #6C6D70; /*GREY COLOR HERE*/
+	padding:8%;
+	margin: 0px;
+}
+#main3{
+	height: 300px;
+	background-color: white;
+	padding:8%;
+	margin: 0px;
+}
+#main4{
+	height: 300px;
+	background-color: #6C6D70; /*GREY COLOR HERE*/
+	padding:8%;
+	margin: 0px;
+}
+#main5{
+	height: 1050px;
+	background-color: white;
+	padding:8%;
+	margin: 0px;
 }
 
-.wrapper {
+#wrapper {
     width: 100%;
     overflow: hidden;
 }
-.container {
+#container {
     width: 100%;
     margin: 0 auto;
 }
 .banner-img {
     width: 100%;
 }
+#navigation{
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	margin: 0px;
+	border-color: #6C6D70;
+	border-bottom-style: solid;
+	border-left: none;
+	border-right: none;
+}
+li.center{
+	float:right;
+	text-align: center;
+	margin-right: 100px;
+	padding: 10px 10px;
 	
+}
+
