@@ -16,23 +16,25 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #231F20;
+	height: 75px;
 }
 
 li {
     float: right;
+	height: 75px;
 }
 
 li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 25px 75px;
     text-decoration: none;
 }
 
 li a:hover {
-    text-decoration: underline;
-	border-bottom-color: #F2D454; /*Yellow color that matches the sparkstone logo color */
+    /*border-bottom-color: #F2D454; /*Yellow color that matches the sparkstone logo color */
+	text-decoration: underline;
 }
 h1 {
 	font-family: 'Josefin Sans';
@@ -97,8 +99,8 @@ pre {
 }*/
 #container{
 	position: absolute;
-	top: 37%;
-	left: 50%;
+	top: 30%;
+	left: 52%;
 	transform: translate(-50%, -50%);
 	width: 50%;
 	background-color: #231F20;
@@ -115,6 +117,7 @@ pre {
 	background-color: #6C6D70; /*GREY COLOR HERE*/
 	padding:8%;
 	margin: 0px;
+	color: white;
 }
 #main3{
 	height: 300px;
@@ -127,6 +130,7 @@ pre {
 	background-color: #6C6D70; /*GREY COLOR HERE*/
 	padding:8%;
 	margin: 0px;
+	color: white;
 }
 #main5{
 	height: 1050px;
@@ -134,10 +138,26 @@ pre {
 	padding:8%;
 	margin: 0px;
 }
-
+#main6{
+	height: 400px;
+	background-color: white;
+	padding:8%;
+	margin: 0px;
+}
+#main7{
+	height: 300px;
+	background-color: white;
+	padding:8%;
+	margin: 0px;
+}
+.logo{
+	width: 300px;
+	height: 75px;
+	
+}
 .banner-img {
-    width: 600px;
-	height: 175px;
+    width: 100%;
+	height: auto;
 	max-width: 100%;
 	max-height: 100%;
 	
@@ -154,6 +174,7 @@ pre {
 	position:fixed;	
 	z-index: 9999;
 }
+
 li.center{
 	float:right;
 	text-align: center;
@@ -161,4 +182,6 @@ li.center{
 	padding: 10px 10px;
 	
 }
+
+
 
