@@ -5,25 +5,32 @@
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
 <body>
-	<!--Navigation Bar-->
-	<div id="navigation">
-		<ul>
-			<a href="index.html"><img class="logo" src="images/sparkstonelogo.png" alt="Banner Image" /></a>
-		  <li><a href="algo.html">Algo Competition</a></li>
-		  <li><a href="portfolio.html">Portfolio</a></li>
-		  <li><a href="contact.html">Contact</a></li>
-		  <li><a href="relations.html">Investor Relations</a></li>
-		  <li><a href="recruitment.html">Recruitment</a></li>
-		  <li><a href="about.html">About</a></li>
-		</ul>
-	</div>
-	<!--Sparkstone logo/banner -->
-	<div id="banner">
-			<div id="container">
-					<a href="index.html"><img class="banner-img" src="images/sparkstonelogo.png" alt="Banner Image" /></a>
-			</div>
-	</div>
-		<div id = "main6">
+<!--Navigation Bar-->
+	<div id="menuBackground">
+		<div id="menuContainer">
+		<label for="show-menu" class="show-menu">Menu:</label>
+		<input type="checkbox" id="show-menu" role="button">
+				<ul id="menu">
+					<li id="minibanner"><img class="logo" src="images/sparkstonelogo.png" alt="Banner Image" /></li>
+					<li>
+						<a href="index.html">About</a>
+						<ul class="hidden">
+							<li><a href="about.html">Meet the Team</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="portfolio.html">Portfolio</a>
+							<ul class="hidden">
+								<li><a href="algo.html">Algo Competition</a></li>
+							</ul>
+					</li>
+						<li><a href="recruitment.html">Recruitment</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="relations.html">Investor Relations</a></li>
+				</ul>
+		</div>
+	 </div>
+		<div class = "whitemain">
 		<h1> Sign-Up </h1>
 			<div id= "form">
 				<form>
@@ -49,16 +56,17 @@
 			</div>
 			
 	</div><!--main2-->
-	<div id="navigation-bottom">
-		<ul>
-		  <li class="center"><a href="index.html">&copy; 2015 Sparkstone Analytics</a></li>
-		  <li class="center"><a href="contact.html">Contact</a></li>
-		  <li class="center"><a href="relations.html">Investor Relations</a></li>
-		  <li class="center"><a href="recruitment.html">Recruitment</a></li>
-		  <li class="center"><a href="index.html">About</a></li>
-		
-		</ul>
-	</div>
+<footer>
+		<div id="menuContainer">
+				<ul id="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="recruitment.html">Recruitment</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="relations.html">Investor Relations</a></li>
+					<li><a href="index.html">&copy; 2015 Sparkstone Analytics &nbsp; &nbsp;</a></li>
+				</ul>
+		</div>
+<footer>
 
 
 

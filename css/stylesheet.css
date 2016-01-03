@@ -2,40 +2,174 @@
 
 * {
 	font-family: 'Josefin Sans', sans-serif;
-	margin: 0px;
 }
 
 body {
+	margin: 0;
 	background-color: #231F20; /*Shade of black from the website */
 	color: #231F20;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #231F20;
-	height: 75px;
+label{
+	font-family: 'Josefin Sans', sans-serif;
 }
 
-li {
-    float: right;
+.logo{
+	width: 300px;
 	height: 75px;
+	
 }
-
-li a {
-    display: inline-block;
-    color: white;
+.banner-img {
+    width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	
+}
+#minibanner{
+	float: left;
+	display:block;
+    min-width:130px;
+    height:75px;
+    text-align:center;
+    line-height:75px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#fff;
+    background:#231F20;
+    text-decoration:none;
+    font-size: 1rem;
+}
+#menuBackground {
+    background:#231F20;
+    width:100%;
+    height:75px;
     text-align: center;
-    padding: 25px 75px;
-    text-decoration: none;
+	border-color: #6C6D70;
+	border-bottom-style: solid;
+	border-left: none;
+	border-right: none;
+}
+#menuContainer {
+    text-align: right;
+	
+}
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
 }
 
-li a:hover {
-    /*border-bottom-color: #F2D454; /*Yellow color that matches the sparkstone logo color */
-	text-decoration: underline;
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    vertical-align: top;
+    margin-right:5px;
 }
+
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:130px;
+    height:75px;
+    text-align:center;
+    line-height:75px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#fff;
+    background:#231F20;
+    text-decoration:none;
+    font-size: 1rem;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+    background:#F2D454;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+    background:#231F20;
+    color:white;
+    height:50px;
+    line-height:40px
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background:#F2D454;
+    color:#fff
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+    position: absolute;
+    display:none
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+    display:block;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+    width:auto;
+    min-width:100px;
+    padding:0 20px
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden,.hidden:hover {
+    display:block
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-decoration:none;
+    color:white;
+    background:#231F20;
+    text-align:center;
+    padding:16px 0;
+    display:none;
+    width:100%!important
+}
+
+/*Hide checkbox*/
+input[type=checkbox] {
+    display:none
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu {
+    display:block;
+    margin:0 auto
+}
+
+/*Responsive Styles*/
+@media screen and (max-width : 760px) {
+    /*Make dropdown links appear inline*/
+    ul {
+        position:static;
+        display:none;
+        white-space: initial;
+    }
+
+    /*Create vertical spacing*/
+    li {
+        margin-bottom:1px
+    }
+
+    /*Make all menu links full width*/
+    ul li,li a {
+        width:100%
+    }
+
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block
+    }
+}
+
 h1 {
 	font-family: 'Josefin Sans';
 	font-size: 32px;
@@ -45,7 +179,10 @@ h1 {
 	line-height: 26.4px;
 	border-bottom-color: #F2D454; 
 	border-bottom-style: solid;
-	margin: 15px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    margin-left: 0px;
 	padding-bottom: 10px;
 }
 h3 {
@@ -82,106 +219,47 @@ pre {
 	line-height: 18.5714px;
 }
 #banner{
-	height: 500px;
-	background-color: #231F20;
+	height:100vh;
+	/*background-color: #231F20;*/
+	background-image: url('https://i.imgur.com/7CjBH7q.jpg');
 	margin: 0px;
 	overflow: hidden; 
+	/*filter: blur(2px);
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);*/
 }
-/*#wrapper{
-	width: 50%;
-	height: 50%;
-	background-color: #231F20;
-	margin: 0 auto;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}*/
 #container{
 	position: absolute;
-	top: 30%;
+	top: 50%;
 	left: 52%;
 	transform: translate(-50%, -50%);
 	width: 50%;
-	background-color: #231F20;
+	/*background-color: #231F20;*/
 	margin: 0 auto;
 }
-#main1{
-	height: 300px;
-	background-color: white;
-	padding:8%;
-	margin: 0px;
-}
-#main2{
-	height: 300px;
-	background-color: #6C6D70; /*GREY COLOR HERE*/
-	padding:8%;
-	margin: 0px;
-	color: white;
-}
-#main3{
-	height: 300px;
-	background-color: white;
-	padding:8%;
-	margin: 0px;
-}
-#main4{
-	height: 300px;
-	background-color: #6C6D70; /*GREY COLOR HERE*/
-	padding:8%;
-	margin: 0px;
-	color: white;
-}
-#main5{
-	height: 1050px;
-	background-color: white;
-	padding:8%;
-	margin: 0px;
-}
-#main6{
-	height: 400px;
-	background-color: white;
-	padding:8%;
-	margin: 0px;
-}
-#main7{
-	height: 300px;
-	background-color: white;
-	padding:8%;
-	margin: 0px;
-}
-.logo{
-	width: 300px;
-	height: 75px;
-	
-}
-.banner-img {
-    width: 100%;
+.whitemain{
 	height: auto;
-	max-width: 100%;
-	max-height: 100%;
-	
-}
-#navigation{
-	float: left;
-	width: 100%;
-	overflow: hidden;
+	background-color: white;
+	padding:8%;
 	margin: 0px;
-	border-color: #6C6D70;
-	border-bottom-style: solid;
-	border-left: none;
-	border-right: none;
-	position:fixed;	
-	z-index: 9999;
+}
+.greymain{
+	height: auto;
+	background-color: #6C6D70; /*GREY COLOR HERE*/
+	padding:8%;
+	margin: 0px;
+	color: white;
+}
+#bio{
+	background-color: white;
+	margin: 0 auto;
 }
 
-li.center{
-	float:right;
-	text-align: center;
-	margin-right: 100px;
-	padding: 10px 10px;
-	
-}
+
+
+
 
 
 
