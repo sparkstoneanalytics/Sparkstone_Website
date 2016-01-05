@@ -7,26 +7,16 @@
 <body>
 <!--Navigation Bar-->
 	<div id="menuBackground">
+		<img class="logo" src="images/sparkstonelogo.png" alt="Banner Image" />
 		<div id="menuContainer">
-		<label for="show-menu" class="show-menu">Menu:</label>
+		<label for="show-menu" class="show-menu">Menu</label>
 		<input type="checkbox" id="show-menu" role="button">
 				<ul id="menu">
-					<li id="minibanner"><img class="logo" src="images/sparkstonelogo.png" alt="Banner Image" /></li>
-					<li>
-						<a href="index.html">About</a>
-						<ul class="hidden">
-							<li><a href="about.html">Meet the Team</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="portfolio.html">Portfolio</a>
-							<ul class="hidden">
-								<li><a href="algo.html">Algo Competition</a></li>
-							</ul>
-					</li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">Team Members</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
 						<li><a href="recruitment.html">Recruitment</a></li>
 						<li><a href="contact.html">Contact</a></li>
-						<li><a href="relations.html">Investor Relations</a></li>
 				</ul>
 		</div>
 	 </div>
@@ -34,7 +24,7 @@
 		<h1> Sign-Up </h1>
 			<div id= "form">
 				<form>
-					<form action="#">
+					<form action="#" method="post"  enctype="multipart/form-data">>
 					  <fieldset>
 						<legend>Contact information:</legend>
 						First name:<br>
@@ -49,7 +39,10 @@
 						Graduation Year:<br>
 						<input type="text" name="year" value="2016">
 						<br><br>
+						Upload Resume in PDF format
+						<input type="file" name="fileToUpload" id="fileToUpload">
 						<input type="submit" value="Submit">
+						
 					  </fieldset>
 					</form>
 				</form>
@@ -59,11 +52,7 @@
 <footer>
 		<div id="menuContainer">
 				<ul id="menu">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="recruitment.html">Recruitment</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="relations.html">Investor Relations</a></li>
-					<li><a href="index.html">&copy; 2015 Sparkstone Analytics &nbsp; &nbsp;</a></li>
+					&copy; 2015 Sparkstone Analytics &nbsp; &nbsp;
 				</ul>
 		</div>
 <footer>
