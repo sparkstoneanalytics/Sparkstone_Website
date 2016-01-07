@@ -13,7 +13,8 @@ function($stateProvider, $urlRouterProvider) {
 		$stateProvider
 		.state(template, {
 			url: '/' + template,
-			templateUrl: 'templates/' + template + '.html'
+			templateUrl: 'templates/' + template + '.html',
+			controller: template.capitalize() + 'Ctrl'
 		});
 	});
 
@@ -22,4 +23,28 @@ function($stateProvider, $urlRouterProvider) {
 
 //MAIN CTRL
 app.controller('MainCtrl', ['$scope', function($scope){
+}]);
+
+//HOME CTRL
+app.controller('HomeCtrl', ['$scope', function($scope){
+}]);
+
+//ABOUT CTRL
+app.controller('AboutCtrl', ['$scope', function($scope){
+}]);
+
+//ALGO CTRL
+app.controller('AlgoCtrl', ['$scope', function($scope){
+}]);
+
+//CONTACT CTRL
+app.controller('ContactCtrl', ['$scope', function($scope){
+}]);
+
+//PORTFOLIO CTRL
+app.controller('PortfolioCtrl', ['$scope', function($scope){
+}]);
+
+//RECRUITMENT CTRL
+app.controller('RecruitmentCtrl', ['$scope', function($scope){
 }]);
