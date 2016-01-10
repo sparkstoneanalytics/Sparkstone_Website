@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sparkstone</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mainstylesheet.css">
+	
+</head>
+<body>
+<script>
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $('#custom-nav').addClass('affix');
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $('#custom-nav').removeClass('affix');
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }   
+});
+</script>
+    <nav id="custom-nav" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+       
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="pull-right nav navbar-nav">
+            <li><a href="home">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+			<li><a href="recruitment.html">recruitment</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!-- Carousel -->
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+ 
+  <!-- Slides in the Carousel-->
+  <ol class="carousel-indicators">
+    <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+    <li data-target="#theCarousel" data-slide-to="1"> </li>
+    <li data-target ="#theCarousel" data-slide-to="2"> </li>
+  </ol >
+ 
+  <!-- Logo Over Images-->
+  <div class="carousel-inner">
+    <div class="item active" >
+    <div class ="slide1"></div>
+    <div class="carousel-caption">
+     <img class="banner-img img-responsive center-block" src="images/sparkstonelogo.png" alt="Banner Image" />
+    </div>
+  </div>
+  <div class="item">
+  <div class="slide2"></div>
+  <div class="carousel-caption">
+	<img class="banner-img img-responsive center-block" src="images/sparkstonelogo.png" alt="Banner Image" />
+  </div>
+  </div>
+  <div class="item">
+  <div class="slide3"></div>
+  <div class="carousel-caption">
+	<img class="banner-img img-responsive center-block" src="images/sparkstonelogo.png" alt="Banner Image" />
+  </div>
+  </div>
+</div>
+ 
+  <!-- Set the actions to take when the arrows are clicked -->
+  <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"> </span>
+  </a>
+  <a class="right carousel-control" href="#theCarousel" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  </div>
+
+<!--Announcements-->
+<div class="container-fluid background-grey">
+	<div class="container">
+		 <div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1 class="text-white">Announcements</h1>
+					<br><br>
+					 <p class="text-white">1. If you'd like to learn more about Sparkstone, please click the About tab to learn more about us!</p>
+					 <br><br>
+					 <p class="text-white">2. Sparkstone is now recruiting! Please visit our recruitment tab if you would like to join our club! </p>
+					 <br><br>
+					 <p class="text-white">3. Look forward to our upcoming Algorithm's competition! </p>
+					 <br><br><br><br>
+			</div>
+		 </div>
+	</div>
+</div>
+
+<!--Section 2-->
+<div class="container-fluid background-white">
+	<div class="container">
+		 <div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1>Optional Section</h1>
+					<br><br>
+					 <p>More information about Sparkstone will be inserted here in the future. Or maybe this section will be deleted entirely.
+					 Who knows?!!</p>
+					 <br><br><br><br>
+			</div>
+		 </div>
+	</div>
+</div>
+
+<!--Footer start-->
+<footer class="site-footer">
+	<div class="container">
+		<div class="row">
+		</div>
+		<div class="bottom-footer">
+			<div class="col-md-5"> &copy; Copyright Sparkstone 2016 </div>
+				<div class="col-md-7">
+					<ul class="footer-nav">
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--Footer End-->
+</body>
+</html>
