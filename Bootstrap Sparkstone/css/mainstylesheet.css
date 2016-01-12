@@ -78,7 +78,7 @@ p{
 	border-top: thick #6C6D70;
 	border-left: none;
 	border-right: none;
-	border-bottom: thick double black;
+	border-bottom: none;
 }
 .bottom-footer{
 	margin-top: 10px;
