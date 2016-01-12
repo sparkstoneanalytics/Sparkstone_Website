@@ -14,7 +14,7 @@
 <body>
 <script>
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
+    if ($(".navbar").offset().top > 500) {
         $('#custom-nav').addClass('affix');
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
@@ -23,12 +23,11 @@ $(window).scroll(function() {
     }   
 });
 </script>
-    <nav id="custom-nav" class="navbar navbar-inverse navbar-fixed-top">
+    <nav id="custom-nav" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-       
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="pull-right nav navbar-nav">
-            <li><a href="home.html">home</a></li>
+            <li id="current"><a href="home.html">home</a></li>
             <li><a href="about.html">about</a></li>
             <li><a href="contact.html">contact</a></li>
 			<li><a href="recruitment.html">recruitment</a></li>
