@@ -81,8 +81,10 @@ p{
 	border-bottom: none;
 }
 .bottom-footer{
-	margin-top: 10px;
-	padding-top: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .footer-nav{
 	text-align: right;
@@ -144,6 +146,18 @@ p{
     -moz-transition: background .5s ease-in-out, opacity .5s ease;
     transition: background .5s ease-in-out, opacity .5s ease;
 }
+#custom-nav.affix #branding{
+    visibility: visible;
+}
+#custom-nav #branding{
+	visibility: hidden;
+}
+.navbar-default .navbar-toggle{
+    background-color: white;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background-color: white;
+}
 .navbar-default {
   background-color: #000000;
   border-color: #000000;
@@ -202,4 +216,13 @@ p{
     color: #ffffff;
     background-color: #000000;
   }
+}
+.brand{
+   max-height: 50%;
+   height: 50%;
+   width: auto;
+   margin-top: 0 auto;
+}
+form label {
+    font-family: 'Josefin Sans', sans-serif;
 }

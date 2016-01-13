@@ -9,18 +9,27 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/mainstylesheet.css">
+   <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 	
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-       
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="pull-right nav navbar-nav">
-            <li><a href="home.html">home</a></li>
-            <li id="current"><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
+		<div class="navbar-header">
+		  <button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse">
+		    <span class="sr-only"> Toggle navigation </span>
+			<span class "icon-bar"></span>
+			<span class "icon-bar"></span>
+			<span class "icon-bar"></span>
+		  </button>
+		  <a id= "branding" href="home.html" class="brand pull-left"><img src="images/sparkstonebrand.png"></a>
+		 </div>
+        <div id="navbar" class="collapse navbar-collapse navHeaderCollapse">
+          <ul class="navbar-right nav navbar-nav">
+            <li id="current"><a href="home.html">home</a></li>
+            <li><a href="about.html">about</a></li>
 			<li><a href="recruitment.html">recruitment</a></li>
+			<li><a href="contact.html">contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -190,7 +199,6 @@
 			<div class="col-md-5"> &copy; Copyright Sparkstone 2016 </div>
 				<div class="col-md-7">
 					<ul class="footer-nav">
-						<li><a href="about.html">About</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>

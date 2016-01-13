@@ -5,22 +5,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/mainstylesheet.css">
-	
+	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="css/mainstylesheet.css">
+	 <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-       
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="pull-right nav navbar-nav">
-            <li><a href="home.html">home</a></li>
+		<div class="navbar-header">
+		  <button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse">
+		    <span class="sr-only"> Toggle navigation </span>
+			<span class "icon-bar"></span>
+			<span class "icon-bar"></span>
+			<span class "icon-bar"></span>
+		  </button>
+		  <a id= "branding" href="home.html" class="brand pull-left"><img src="images/sparkstonebrand.png"></a>
+		 </div>
+        <div id="navbar" class="collapse navbar-collapse navHeaderCollapse">
+          <ul class="navbar-right nav navbar-nav">
+            <li id="current"><a href="home.html">home</a></li>
             <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
-			<li  id="current"><a href="recruitment.html">recruitment</a></li>
+			<li><a href="recruitment.html">recruitment</a></li>
+			<li><a href="contact.html">contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -39,33 +47,56 @@
 						<p>For regular timeline recruitment, we are looking to take 2-3 new members with the first application deadline of Feb. 3rd. 
 						Decisions regarding interviews will be delivered back to applicants a week after the deadline.</p>
 						<br><br>
+				</div>
 						<!--FORM IS HERE INPUT BACKEND STUFF HERE-->
 						<form action="#" method="#">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<div class="form-group">
-								<label for="name">Name: </label>
+								<label for="name">Full Name: </label>
 								<input type="text" class="form-control" id="name">
 							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<div class="form-group">
 								<label for="email">Email address: </label>
 								<input type="email" class="form-control" id="email">
 							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<div class="form-group">
-								<label for="question1">Why do you want to join Sparkstone? (300 word limit):</label>
+								<label for="major">Major (Planned major if unaffiliated): </label>
+								<input type="text" class="form-control" id="major">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="form-group">
+								<label for="sel1">Current School Year:</label>
+								<select class="form-control" id="sel1">
+									<option>Freshman</option>
+									<option>Sophomore</option>
+									<option>Junior</option>
+									<option>Senior</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="form-group">
+								<label for="question1">What about algorithmic trading excites you? (200 word limit):</label>
 								<textarea class="form-control" rows="5" id="question1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="question2">What attributes do you bring to Sparkstone?(300 word limit):</label>
+								<label for="question2">Describe what you are most passionate about. (200 word limit):</label>
 								<textarea class="form-control" rows="5" id="question2"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="question3">What about analytics trading interests you? (300 word limit):</label>
+								<label for="question3">What do you think Sparkstone expects out of you? (200 word limit):</label>
 								<textarea class="form-control" rows="5" id="question3"></textarea>
 							</div>
-							  <div class="form-group">
+							<div class="form-group">
 								<label for="resume">Resume Upload</label>
 								<input type="file" id="resume">
 								<p class="help-block">PDF format only. 100kb or less.</p>
-							  </div>
+							</div>
 							<input type="submit" class="btn btn-primary" value="Submit Button">
 						</form>
 						<br><br><br>
@@ -83,7 +114,6 @@
 			<div class="col-md-5"> &copy; Copyright Sparkstone 2016 </div>
 				<div class="col-md-7">
 					<ul class="footer-nav">
-						<li><a href="about.html">About</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
