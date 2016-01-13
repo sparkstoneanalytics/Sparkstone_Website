@@ -40,30 +40,30 @@
 						Decisions regarding interviews will be delivered back to applicants a week after the deadline.</p>
 						<br><br>
 						<!--FORM IS HERE INPUT BACKEND STUFF HERE-->
-						<form action="#" method="#">
+						<form action="http://localhost:3000/website/testfile/" method="post" enctype="multipart/form-data" accept-charset="utf-8">
 							<div class="form-group">
 								<label for="name">Name: </label>
-								<input type="text" class="form-control" id="name">
+								<input type="text" class="form-control" id="name" name="name">
 							</div>
 							<div class="form-group">
 								<label for="email">Email address: </label>
-								<input type="email" class="form-control" id="email">
+								<input type="email" class="form-control" id="email" name="email">
 							</div>
 							<div class="form-group">
 								<label for="question1">Why do you want to join Sparkstone? (300 word limit):</label>
-								<textarea class="form-control" rows="5" id="question1"></textarea>
+								<textarea class="form-control" rows="5" id="question1" name="question1"></textarea>
 							</div>
 							<div class="form-group">
 								<label for="question2">What attributes do you bring to Sparkstone?(300 word limit):</label>
-								<textarea class="form-control" rows="5" id="question2"></textarea>
+								<textarea class="form-control" rows="5" id="question2" name="question2"></textarea>
 							</div>
 							<div class="form-group">
 								<label for="question3">What about analytics trading interests you? (300 word limit):</label>
-								<textarea class="form-control" rows="5" id="question3"></textarea>
+								<textarea class="form-control" rows="5" id="question3" name="question3"></textarea>
 							</div>
 							  <div class="form-group">
 								<label for="resume">Resume Upload</label>
-								<input type="file" id="resume">
+								<input type="file" id="resume" name="resume" accept=".pdf">
 								<p class="help-block">PDF format only. 100kb or less.</p>
 							  </div>
 							<input type="submit" class="btn btn-primary" value="Submit Button">
