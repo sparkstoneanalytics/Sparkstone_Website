@@ -53,19 +53,19 @@
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<div class="form-group">
 								<label for="name">Full Name: </label>
-								<input type="text" class="form-control" id="name" name="name">
+								<input type="text" class="form-control" id="name" name="name" maxlength="50">
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<div class="form-group">
 								<label for="email">Email address: </label>
-								<input type="email" class="form-control" id="email" name="email">
+								<input type="email" class="form-control" id="email" name="email" maxlength="255">
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<div class="form-group">
 								<label for="major">Major (Planned major if unaffiliated): </label>
-								<input type="text" class="form-control" id="major" name="major">
+								<input type="text" class="form-control" id="major" name="major" maxlength="50">
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -83,23 +83,23 @@
 						</div>
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<div class="form-group">
-								<label for="question1">What about algorithmic trading excites you? (200 word limit):</label>
-								<textarea class="form-control" rows="5" id="question1" name="question1"></textarea>
+								<label for="question1">What about algorithmic trading excites you? (1000 character limit):</label>
+								<textarea class="form-control" rows="5" id="question1" name="question1" maxlength="1000"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="question2">Describe what you are most passionate about. (200 word limit):</label>
-								<textarea class="form-control" rows="5" id="question2" name="question2"></textarea>
+								<label for="question2">Describe what you are most passionate about. (1000 character limit):</label>
+								<textarea class="form-control" rows="5" id="question2" name="question2" maxlength="1000"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="question3">What do you think Sparkstone expects out of you? (200 word limit):</label>
-								<textarea class="form-control" rows="5" id="question3" name="question3"></textarea>
+								<label for="question3">What do you think Sparkstone expects out of you? (1000 character limit):</label>
+								<textarea class="form-control" rows="5" id="question3" name="question3" maxlength="1000"></textarea>
 							</div>
 							<div class="form-group">
 								<label for="resume">Resume Upload</label>
-								<input type="file" id="resume" name="resume" accept=".pdf">
+								<input type="file" id="resume" name="resume" accept="application/pdf">
 								<p class="help-block">PDF format only. 100kb or less.</p>
 							</div>
-							<input type="submit" class="btn btn-primary" value="Submit Button">
+							<input type="submit" class="btn btn-primary" value="Submit">
 						</form>
 						<br><br><br>
 				</div>
