@@ -100,9 +100,22 @@ p{
 .footer-nav a{
 	color: white;
 }
+.left-content{
+	border-right: 1px solid #000;
+}
+.left-section{
+	padding-right: 1em;
+	padding-top: 20px;
+}
+.right-section{
+	padding-top: 20px;
+}
 .profile-pictures{
 	height:100%;
 	width:100%;
+  	filter: gray; /* IE6-9 */
+  	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 .headshot{
 	width:100%; 
@@ -216,6 +229,9 @@ p{
     color: #ffffff;
     background-color: #000000;
   }
+ .left-content{
+	border-right: none;
+ }
 }
 .brand{
    max-height: 50%;
