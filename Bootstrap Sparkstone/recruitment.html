@@ -29,6 +29,11 @@
 				document.getElementById('successAlert').style.display = 'block';
 			else
 				document.getElementById('successAlert').style.display= 'none';
+			if(getURLParameter("message")=="fileError")
+				document.getElementById('fileErrorAlert').style.display = 'block';
+			else
+				document.getElementById('fileErrorAlert').style.display= 'none';
+
 		}
 	</script>
 </head>
@@ -74,6 +79,7 @@
 							<div id="errorAlert" class="alert alert-danger">Error! Please fill out all fields</div>
 							<div id="errorInternalAlert" class="alert alert-danger">There was an error when processing your form. Please try again later</div>
 							<div id="successAlert" class="alert alert-success">Thank you for your application! We will be in touch shortly</div>
+							<div id="fileErrorAlert" class="alert alert-danger">Please upload a resume that is under the size limit</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<div class="form-group">
@@ -122,7 +128,7 @@
 							<div class="form-group">
 								<label for="resume">Resume Upload</label>
 								<input type="file" id="resume" name="resume" accept="application/pdf">
-								<p class="help-block">PDF format only. 100kb or less.</p>
+								<p class="help-block">PDF format only. 2MB or less.</p>
 							</div>
 							<input type="submit" class="btn btn-primary" value="Submit">
 						</form>
