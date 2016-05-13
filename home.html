@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sparkstone</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mainstylesheet.css">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+</head>
+
+<body>
+  <!-- Google Tag Manager -->
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KT45VJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KT45VJ');
+  </script>
+  <!-- End Google Tag Manager -->
+  <script>
+    $(window).scroll(function() {
+      if ($(".navbar").offset().top > 300) {
+        $('#custom-nav').addClass('affix');
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+      } else {
+        $('#custom-nav').removeClass('affix');
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      }
+    });
+  </script>
+  <nav id="custom-nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="sr-only"> Toggle navigation </span>
+          <span class "icon-bar"></span>
+          <span class "icon-bar"></span>
+          <span class "icon-bar"></span>
+        </button>
+        <a id="branding" href="home.html" class="brand pull-left"><img src="images/sparkstonebrand.png"></a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="navbar-right nav navbar-nav">
+          <li id="current"><a href="home.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="registration.html">trading challenge</a></li>
+          <!--<li><a href="recruitment.html">recruitment</a></li>-->
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <!--Carousel-->
+  <div id="theCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="slide3"></div>
+        <div class="carousel-caption">
+          <img class="banner-img img-responsive center-block" src="images/sparkstonelogo.png" alt="Banner Image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid background-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <br>
+            <br>
+            <p class=centered><span id="mission-statement">Our goal at Sparkstone is to pioneer the algorithms and analytical tools necessary to master tomorrow’s financial markets.</span></p>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Announcements-->
+    <div class="container-fluid background-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="text-white">Announcements</h1>
+            <br>
+            <br>
+            <p class="text-white">Are you interested in quantitative trading? Ignite your interest by participating in the Sparkstone Trading Challenge, hosted by Sparkstone Analytics, and sponsored by Optiver. Form a team, or compete alone to earn prizes, develop contacts
+              in the field, learn through our educational events, and build high-performing trading strategies! Click on the registration tab at the top to learn more! </p>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer start-->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="bottom-footer">
+            <div class="col-md-5"> &copy; Copyright Sparkstone Analytics LLC 2016 </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer End-->
+</body>
+
+</html>

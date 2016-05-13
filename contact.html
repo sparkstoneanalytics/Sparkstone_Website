@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sparkstone</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/mainstylesheet.css">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  <script>
+    function getURLParameter(name) {
+      return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null
+    }
+
+    function checkMessage() {
+      if (getURLParameter("message") == "error")
+        document.getElementById('errorAlert').style.display = 'block';
+      else
+        document.getElementById('errorAlert').style.display = 'none';
+      if (getURLParameter("message") == "errorInternal")
+        document.getElementById('errorInternalAlert').style.display = 'block';
+      else
+        document.getElementById('errorInternalAlert').style.display = 'none';
+      if (getURLParameter("message") == "success")
+        document.getElementById('successAlert').style.display = 'block';
+      else
+        document.getElementById('successAlert').style.display = 'none';
+    }
+  </script>
+</head>
+
+<body onload="checkMessage()">
+  <!-- Google Tag Manager -->
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KT45VJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KT45VJ');
+  </script>
+  <!-- End Google Tag Manager -->
+  <nav id="custom-nav2" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="sr-only"> Toggle navigation </span>
+          <span class "icon-bar"></span>
+          <span class "icon-bar"></span>
+          <span class "icon-bar"></span>
+        </button>
+        <a id="branding" href="home.html" class="brand pull-left"><img src="images/sparkstonebrand.png"></a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="navbar-right nav navbar-nav">
+          <li><a href="home.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="registration.html">trading challenge</a></li>
+          <!--<li><a href="recruitment.html">recruitment</a></li>-->
+          <li id="current"><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid background-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1>Contact Us</h1>
+          <br>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left-content">
+          <div class="left-section">
+            <form action="http://sparkstone.elasticbeanstalk.com/website/contact/" method="post">
+              <div id="errorAlert" class="alert alert-danger">Please fill out all fields</div>
+              <div id="errorInternalAlert" class="alert alert-danger">There was an error when processing the form. Please try again later</div>
+              <div id="successAlert" class="alert alert-success">Thank you for reaching out! We will be in touch as soon as possible</div>
+              <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" class="form-control" id="name" name="name" maxlength="50">
+              </div>
+              <div class="form-group">
+                <label for="email">Email address: </label>
+                <input type="email" class="form-control" id="email" name="email" maxlength="255">
+              </div>
+              <div class="form-group">
+                <label for="comment">Message (5000 character limit):</label>
+                <textarea class="form-control" rows="10" id="comment" name="comment" maxlength="5000"></textarea>
+              </div>
+              <input type="submit" class="btn btn-primary" value="Submit">
+            </form>
+          </div>
+          <br/>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="right-section">
+            <p>Address: 2 Ridgewood Road, Ithaca NY 14850</p>
+            <p>Email: contact@sparkstoneanalytics.com</p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://sparkstoneanalytics.us12.list-manage.com/subscribe/post?u=70a46d4913f13409be0f56c2a&amp;id=03b290c2ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <p>Sign up for email communication</p>
+                <div class="mc-field-group form-group">
+                  <label for="mce-EMAIL">Email Address: </label>
+                  <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+                </div>
+                <div class="mc-field-group form-group">
+                  <label for="mce-INTEREST">Interest: </label>
+                  <select name="INTEREST" class="required form-control" id="mce-INTEREST">
+                    <option value="Contributor">Contributor</option>
+                    <option value="General">General</option>
+                    <option value="Applicant">Applicant</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none" class="alert alert-danger"></div>
+                  <div class="response" id="mce-success-response" style="display:none" class="alert alert-success"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_70a46d4913f13409be0f56c2a_03b290c2ef" tabindex="-1" value="">
+                </div>
+                <input type="submit" class="btn btn-primary" value="Subscribe" name="subscribe">
+              </div>
+            </form>
+          </div>
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!--Footer start-->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="bottom-footer">
+          <div class="col-md-5"> &copy; Copyright Sparkstone Analytics LLC 2016 </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+    fnames[1] = 'FNAME';
+    ftypes[1] = 'text';
+    fnames[2] = 'LNAME';
+    ftypes[2] = 'text';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+</script>
+
+</html>
