@@ -88,6 +88,11 @@ p.centered {
 	border-right: none;
 	border-bottom: none;
 	padding-bottom: 10px;
+	right: 0;
+	bottom: 2;
+	left: 0;
+	padding: 1rem;
+	text-align: center;
 }
 .bottom-footer{
 	margin-top: 5px;
