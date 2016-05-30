@@ -55,7 +55,7 @@ h1{
   font-size: 145%;
 }
 .slide1{
-  background-image: url(../images/background-image2.jpg);
+  background-image: url(../images/group.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -95,11 +95,6 @@ p.centered {
 	border-right: none;
 	border-bottom: none;
 	padding-bottom: 10px;
-	right: 0;
-	bottom: 2;
-	left: 0;
-	padding: 1rem;
-	text-align: center;
 }
 .bottom-footer{
 	margin-top: 5px;
