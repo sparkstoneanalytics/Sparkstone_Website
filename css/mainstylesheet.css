@@ -61,6 +61,13 @@ h1{
   background-position: center;
   background-size: cover;
 }
+.slide2{
+  background-image: url(../images/background-image2.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .slide3{
   background-image: url(../images/background-image.jpg);
   height: 100vh;
