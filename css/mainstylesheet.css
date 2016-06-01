@@ -46,6 +46,9 @@ h1{
 	font-family: 'Josefin Sans', sans-serif;
 	border-bottom: solid #F2D454;
 }
+h5{
+	padding: 2em;
+}
 #errorAlert, #errorInternalAlert, #fileErrorAlert, #successAlert {
   display: none;
 }
@@ -147,6 +150,17 @@ p.centered {
 	margin:auto;
 	display:block;
 	object-fit: contain;
+}
+.headshot2{
+	width:100%;
+	height:100%;
+	margin:auto;
+	display:block;
+	object-fit: contain;
+	border: 1px solid white;
+}
+.headshot2:hover{
+	border: 1px solid #F2D454;
 }
 
 .help-block {
