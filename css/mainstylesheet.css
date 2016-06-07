@@ -3,6 +3,10 @@
 * {
 	font-family: 'Josefin Sans', sans-serif;
 }
+html {
+  position: relative;
+  min-height: 100%;
+}
 .jumbotron{
 	color:white;
 }
@@ -95,8 +99,8 @@ p{
 p.centered {
   text-align: center;
 }
-
 .site-footer{
+	position: absolute;
 	background-color: black;
 	color: white;
 	border-style: solid;
@@ -105,6 +109,8 @@ p.centered {
 	border-right: none;
 	border-bottom: none;
 	padding-bottom: 10px;
+	width: 100%;
+	bottom: 0px;
 }
 .bottom-footer{
 	margin-top: 5px;

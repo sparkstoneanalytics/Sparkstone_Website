@@ -17,24 +17,10 @@
       return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null
     }
 
-    function checkMessage() {
-      if (getURLParameter("message") == "error")
-        document.getElementById('errorAlert').style.display = 'block';
-      else
-        document.getElementById('errorAlert').style.display = 'none';
-      if (getURLParameter("message") == "errorInternal")
-        document.getElementById('errorInternalAlert').style.display = 'block';
-      else
-        document.getElementById('errorInternalAlert').style.display = 'none';
-      if (getURLParameter("message") == "success")
-        document.getElementById('successAlert').style.display = 'block';
-      else
-        document.getElementById('successAlert').style.display = 'none';
-    }
   </script>
 </head>
 
-<body onload="checkMessage()">
+<body> 
   <!-- Google Tag Manager -->
   <noscript>
     <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KT45VJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
