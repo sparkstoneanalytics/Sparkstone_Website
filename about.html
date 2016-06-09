@@ -50,7 +50,15 @@
       <div id="navbar" class="collapse navbar-collapse navHeaderCollapse">
         <ul class="navbar-right nav navbar-nav">
           <li><a href="home.html">Home</a></li>
-          <li id="current"><a href="about.html">About</a></li>
+          <li class="dropdown">
+              <a href="about.html" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+            <ul class="dropdown-menu nav navbar-nav" id="about-dropdown">
+              <li><a href="#">What We Do</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Meet the Team</a></li>
+              <li><a href="#">Associates</a></li>
+            </ul>
+          </li>
           <li><a href="sponsors.html">Sponsors</a></li>
           <li><a href="registration.html">Trading Challenge</a></li>
           <!--<li><a href="recruitment.html">recruitment</a></li>-->
@@ -255,7 +263,7 @@
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="profile-pictures">
               <!--<a href="#Vardan" data-toggle="collapse">-->
-                <img class="headshot2" src="images/vardan_verdiyan.jpg" alt="Vardan Verdiyan">
+              <img class="headshot2" src="images/vardan_verdiyan.jpg" alt="Vardan Verdiyan">
               <!--</a>-->
             </div>
             <h3>&emsp;Vardan Veriyan</h3>

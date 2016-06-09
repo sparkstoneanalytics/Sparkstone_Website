@@ -261,6 +261,10 @@ p.centered {
 	background-color: rgba(0,0,0,0.8);
 	border: none;
 }
+#about-dropdown{
+	background-color: rgba(0,0,0,0.8);
+	border: none;
+}
 .navbar-default .navbar-toggle{
     background-color: white;
 }
@@ -312,6 +316,9 @@ p.centered {
 }
 .navbar-default .navbar-link:hover {
   color: #ffffff;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
 }
 
 @media (max-width: 767px) {
