@@ -12,45 +12,6 @@
   <link rel="stylesheet" type="text/css" href="css/mainstylesheet.css">
   <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 
-  <script>
-    function getURLParameter(name) {
-      return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null
-    }
-
-    function checkMessage() {
-      if (getURLParameter("message") == "error")
-        document.getElementById('errorAlert').style.display = 'block';
-      else
-        document.getElementById('errorAlert').style.display = 'none';
-      if (getURLParameter("message") == "errorInternal")
-        document.getElementById('errorInternalAlert').style.display = 'block';
-      else
-        document.getElementById('errorInternalAlert').style.display = 'none';
-      if (getURLParameter("message") == "success")
-        document.getElementById('successAlert').style.display = 'block';
-      else
-        document.getElementById('successAlert').style.display = 'none';
-      if (getURLParameter("message") == "fileError")
-        document.getElementById('fileErrorAlert').style.display = 'block';
-      else
-        document.getElementById('fileErrorAlert').style.display = 'none';
-
-    }
-
-    function showfieldTeam(teammembers) {
-      if (teammembers == 'partner') document.getElementById('optional-partner').innerHTML =
-        '<div class="form-group">' + '<label for="additional-team-member" class="text-white"> Netid of partner (max 1 partner) </label>' +
-        '<input type="text" class="form-control" id="additional-team-member" name="additionalTeamMember" maxlength="10">' + '</div>';
-      else document.getElementById('optional-partner').innerHTML = '';
-    }
-
-    function showfieldHear(hearField) {
-      if (hearField == 'Other') document.getElementById('other-input').innerHTML =
-        '<div class="form-group">' + '<label for="hear-other" class="text-white"> Please indicate how you heard of this competition </label>' + '<input type="text" class="form-control" id="hear-other" name="hearOther" maxlength="50">' +
-        '</div>';
-      else document.getElementById('other-input').innerHTML = '';
-    }
-  </script>
 </head>
 
 <body onload="checkMessage()">
@@ -92,7 +53,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="sponsors.html">Sponsors</a></li>
           <li id="current"><a href="registration.html">Trading Challenge</a></li>
-          <!--<li id="current"><a href="recruitment.html">recruitment</a></li>-->
+          <li><a href="recruitment.html">Recruitment</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -113,165 +74,41 @@
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 Sparkstone Trading Challenge
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <span class="right-align">
-                  <span class="sponsor-citation"> sponsored by </span> <img src="images/optiver-logo.jpg"  height="30px" />
-                </span>
-              </div>
             </div>
           </h1>
           <br>
           <br>
-          <p>The Sparkstone Trading Challenge provides a chance for Cornell students to learn about algorithmic trading and gain real-world experience building strategies on our proprietary analytics platform!</p>
 
-          <p>This past semester was the first Trading Challenge with $400 in total prizes. Representatives from our sponsors for the competition, <a href="http://www.optiver.com" target="_blank">Optiver</a> came to hand out the prizes with us as well as
-            celebrate the winning teams with a dinner. </p>
+          <p> The Sparkstone Trading Challenge provides a chance for Cornell students to learn about algorithmic trading and gain real-world experience building strategies on our proprietary analytics platform!</p>
+          <p> This past semester was the first Trading Challenge with $400 in total prizes. Representatives from our sponsors for the competition, <a href="http://www.optiver.com/corporate/" target="_blank">Optiver</a>, came to hand out the prizes with us as well as celebrate the winning teams with a dinner.</p>
+          <p> Given the success of this trading challenge, come this fall 2016, we will be hosting this competition again. If you missed out before, now is your chance to try your hand at algorithmic trading. For those who competed this year, we hope you will join us again!</p>
 
-          <p>The challenge will take place from April 4 until May 4. Registration is free, and will remain open until March 25th. You can register as a one person team, pick a partner, or let our system match you with someone to complement your skills. For
-            example, if you have particular strengths in finance, we will do our best to match you with someone with a coding background to help implement your strategy ideas! Please review our Terms and Conditions below before registering.
-          </p>
-
-          <p>Given the success of this trading challenge, come this fall 2016, we will be hosting this competition again. If you missed out before, now is your chance to try your hand at algorithmic trading. For those who competed this year, we hope you
-            will join us again!</p>
-
-          <p> Update: Registration is closed as of March 26th. Thanks to everyone who applied.
-
-            <br>
-            <br>
+          <br>
+          <br>
+          <div class="col-md-8 col-md-offset-2">
+            <figure class="figure">
+              <img src="images/first_place.jpg" class="img-fluid img-rounded banner-img img-responsive center-block" alt="First Place">
+              <figcaption class="figure-caption">Ryan (left) and John Rothstein from Optiver (right) with Xuanru Shen, our first place winner of $250! Her strategy achieved a mean sharpe ratio of 1.73 across our test periods.</figcaption>
+            </figure>
+            <br />
+            <figure class="figure">
+              <img src="images/second_place.jpg" class="img-fluid img-rounded banner-img img-responsive center-block" alt="Second Place">
+              <figcaption class="figure-caption">Ryan and John Rothstein with Hayden Cheng and Conan Zai, our second place winners of $100!</figcaption>
+            </figure>
+            <br/>
+            <figure class="figure">
+              <img src="images/third_place.jpg" class="img-fluid img-rounded banner-img img-responsive center-block" alt="Third Place">
+              <figcaption class="figure-caption">Ryan and John Rothstein with Harshil Mattoo and Adrian Wu, our third place winners of $50! Next year there will be bigger checks.</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid background-grey">
-    <div class="container">
-      <div class="row">
-        <h1 class="text-white">Registration</h1>
-        <!--FORM IS HERE INPUT BACKEND STUFF HERE-->
-        <form action="http://sparkstone.elasticbeanstalk.com/website/registration/" method="post" enctype="multipart/form-data" accept-charset="utf-8" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div id="errorAlert" class="alert alert-danger">Error! Please fill out all fields</div>
-            <div id="errorInternalAlert" class="alert alert-danger">There was an error when processing your form. Please try again later</div>
-            <div id="successAlert" class="alert alert-success">Thank you for your application! We will be in touch shortly</div>
-            <div id="fileErrorAlert" class="alert alert-danger">Please upload a resume and fill out all required fields</div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group">
-              <label for="firstname" class="text-white">First Name: </label>
-              <input type="text" class="form-control" id="firstname" name="firstname" maxlength="50">
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group">
-              <label for="lastname" class="text-white">Last Name: </label>
-              <input type="text" class="form-control" id="lastname" name="lastname" maxlength="50">
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group">
-              <label for="netid" class="text-white">Netid: </label>
-              <input type="text" class="form-control" id="netid" name="netid" maxlength="10">
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group">
-              <label for="major" class="text-white">Major (Planned major if unaffiliated): </label>
-              <input type="text" class="form-control" id="major" name="major" maxlength="50">
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group">
-              <label for="schoolyear" class="text-white">Current School Year:</label>
-              <select class="form-control" id="schoolyear" name="schoolyear">
-                <option>Freshman</option>
-                <option>Sophomore</option>
-                <option>Junior</option>
-                <option>Senior</option>
-                <option>Masters</option>
-                <option>Other</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group" class="text-white">
-              <label for="skill" class="text-white">Skill/Emphasis:</label>
-              <select class="form-control" id="skill" name="skill">
-                <option>Coding</option>
-                <option>Finance</option>
-                <option>Both</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                  <label for="teammembers" class="text-white">Do you want a team member?</label>
-                  <select class="form-control" id="teammembers" name="teammembers" onchange="showfieldTeam(this.options[this.selectedIndex].value)">
-                    <option value="random">Yes, pair me with someone random</option>
-                    <option value="partner">Yes, I have a partner in mind</option>
-                    <option value="alone">No, I want to work individually</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="optional-partner">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                  <label for="hear" class="text-white">How did you hear about this competition?</label>
-                  <select class="form-control" id="hear" name="hear" onchange="showfieldHear(this.options[this.selectedIndex].value)">
-                    <option value="Quartercard">Quartercard</option>
-                    <option value="Facebook">Facebook</option>
-                    <option value="Email">Email</option>
-                    <option value="Another Person">Another Person</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="other-input">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <div class="form-group">
-                  <label for="resume" class="text-white">Resume Upload</label>
-                  <span class="btn btn-default btn-file btn-sm">
-                    Choose File <input type="file" id="resume" name="resume" accept="application/pdf">
-                  </span>
-                  <p class="help-block text-white">PDF format only. 1MB or less.</p>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <div class="form-group">
-                  <label for="picture" class="text-white">Resume Book Picture (Optional)</label>
-                  <span class="btn btn-default btn-file btn-sm">
-                    Choose File <input type="file" id="picture" name="picture" accept="image/*" >
-                  </span>
-                  <p class="help-block text-white">10MB or less.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="checkbox" name="agree" value="check" id="agree"> <span class="text-white"> I have read and agree to the <a href="TermsandConditionsSp16.pdf" target="_blank" class="link-yellow">Terms and Conditions.</a></span>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="submit" class="btn btn-primary btn-yellow" value="Submit" disabled>
-            <br>
-            <br>
-            <br>
-          </div>
-      </div>
-      </form>
-    </div>
-    <br />
-  </div>
-  </div>
+  <br />
+  <br />
+  <br />
+  <br />
   <!--Footer start-->
   <footer class="site-footer">
     <div class="container">
