@@ -113,16 +113,23 @@
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 Sparkstone Trading Challenge
               </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <span class="right-align">
+                  <span class="sponsor-citation"> sponsored by </span> <img src="images/optiver-logo.jpg"  height="30px" />
+                </span>
+              </div>
             </div>
           </h1>
           <br>
           <br>
           <p>The Sparkstone Trading Challenge provides a chance for Cornell students to learn about algorithmic trading and gain real-world experience building strategies on our proprietary analytics platform.</p>
           <p>This past semester was the first Trading Challenge with $400 in total prizes. Representatives from our sponsors for the competition, Optiver, came to hand out the prizes with us as well as celebrate the winning teams with a dinner.</p>
-          <p>Given the success of this trading challenge, we will be hosting this competition again this fall. If you missed out before, now is your chance to try your hand at algorithmic trading. For those who competed last year, we hope you will join us again!</p>
+          <p>Given the success of this trading challenge, we will be hosting this competition again this fall. If you missed out before, now is your chance to try your hand at algorithmic trading. For those who competed last year, we hope you will join us
+            again!
+          </p>
 
-            <br>
-            <br>
+          <br>
+          <br>
         </div>
       </div>
     </div>
@@ -130,7 +137,7 @@
   <div class="container-fluid background-grey">
     <div class="container">
       <div class="row">
-        <h1 class="text-white">Registration</h1>
+        <h1 class="text-white" id="form">Registration</h1>
         <!--FORM IS HERE INPUT BACKEND STUFF HERE-->
         <form action="http://sparkstone.elasticbeanstalk.com/website/registration/" method="post" enctype="multipart/form-data" accept-charset="utf-8" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -225,37 +232,33 @@
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="form-group">
                   <label for="resume" class="text-white">Resume Upload</label>
-                  <span class="btn btn-default btn-file btn-sm">
-                    Choose File <input type="file" id="resume" name="resume" accept="application/pdf">
-                  </span>
-                  <p class="help-block text-white">PDF format only. 1MB or less.</p>
+                  <input type="file" id="resume" name="resume" accept="application/pdf">
+                  <p class="help-block text-white">PDF format only. 2MB or less.</p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="form-group">
-                  <label for="picture" class="text-white">Resume Book Picture (Optional)</label>
-                  <span class="btn btn-default btn-file btn-sm">
-                    Choose File <input type="file" id="picture" name="picture" accept="image/*" >
-                  </span>
+                  <label for="picture" class="text-white">Resume Book Picture (optional)</label>
+                  <input type="file" id="picture" name="picture" accept="image/*">
                   <p class="help-block text-white">10MB or less.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="checkbox" name="agree" value="check" id="agree"> <span class="text-white"> I have read and agree to the <a href="TermsandConditionsSp16.pdf" target="_blank" class="link-yellow">Terms and Conditions.</a></span>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="submit" class="btn btn-primary btn-yellow" value="Submit">
-            <br>
-            <br>
-            <br>
-          </div>
       </div>
-      </form>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <input type="checkbox" name="agree" value="check" id="agree"> <span class="text-white"> I have read and agree to the <a href="TermsandConditionsSp16.pdf" target="_blank" class="link-yellow">Terms and Conditions.</a></span>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <input type="submit" class="btn btn-primary btn-yellow" value="Submit">
+        <br>
+        <br>
+        <br>
+      </div>
     </div>
-    <br />
+    </form>
   </div>
+  <br />
   </div>
   <!--Footer start-->
   <footer class="site-footer">
