@@ -137,7 +137,22 @@
   <div class="container-fluid background-grey">
     <div class="container">
       <div class="row">
-        <h1 class="text-white" id="form">Registration</h1>
+        <h1 class="text-white" id="form">Trading Challenge Timeline</h1>
+        <p class="text-white"> 9.5.16 - Information Session: 5pm at Kennedy Hall 1st Floor, EHub Main Room
+          <br/>9.8.16 - Information Session: 5pm at Kennedy Hall 1st Floor, EHub Main Room
+          <br/>9.9.16 - Application due at midnight
+          <br/>9.12.16 - Welcome for Registrants (Mandatory to participate)
+          <br/>9.17.16 - Education Series: How to Build Strategies
+          <br/>9.30.16 - Competition submission deadline at midnight</p>
+          <br/>
+          <br/>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <h1 id="form">Registration</h1>
         <!--FORM IS HERE INPUT BACKEND STUFF HERE-->
         <form action="http://sparkstone.elasticbeanstalk.com/website/registration/" method="post" enctype="multipart/form-data" accept-charset="utf-8" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -148,31 +163,31 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-group">
-              <label for="firstname" class="text-white">First Name: </label>
+              <label for="firstname">First Name: </label>
               <input type="text" class="form-control" id="firstname" name="firstname" maxlength="50">
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-group">
-              <label for="lastname" class="text-white">Last Name: </label>
+              <label for="lastname">Last Name: </label>
               <input type="text" class="form-control" id="lastname" name="lastname" maxlength="50">
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-group">
-              <label for="netid" class="text-white">Netid: </label>
+              <label for="netid">Netid: </label>
               <input type="text" class="form-control" id="netid" name="netid" maxlength="10">
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-group">
-              <label for="major" class="text-white">Major (Planned major if unaffiliated): </label>
+              <label for="major">Major (Planned major if unaffiliated): </label>
               <input type="text" class="form-control" id="major" name="major" maxlength="50">
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-group">
-              <label for="schoolyear" class="text-white">Current School Year:</label>
+              <label for="schoolyear">Current School Year:</label>
               <select class="form-control" id="schoolyear" name="schoolyear">
                 <option>Freshman</option>
                 <option>Sophomore</option>
@@ -184,8 +199,8 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group" class="text-white">
-              <label for="skill" class="text-white">Skill/Emphasis:</label>
+            <div class="form-group">
+              <label for="skill">Skill/Emphasis:</label>
               <select class="form-control" id="skill" name="skill">
                 <option>Coding</option>
                 <option>Finance</option>
@@ -197,7 +212,7 @@
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
-                  <label for="teammembers" class="text-white">Do you want a team member?</label>
+                  <label for="teammembers">Do you want a team member?</label>
                   <select class="form-control" id="teammembers" name="teammembers" onchange="showfieldTeam(this.options[this.selectedIndex].value)">
                     <option value="random">Yes, pair me with someone random</option>
                     <option value="partner">Yes, I have a partner in mind</option>
@@ -213,7 +228,7 @@
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
-                  <label for="hear" class="text-white">How did you hear about this competition?</label>
+                  <label for="hear">How did you hear about this competition?</label>
                   <select class="form-control" id="hear" name="hear" onchange="showfieldHear(this.options[this.selectedIndex].value)">
                     <option value="Quartercard">Quartercard</option>
                     <option value="Facebook">Facebook</option>
@@ -231,26 +246,26 @@
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="form-group">
-                  <label for="resume" class="text-white">Resume Upload</label>
+                  <label for="resume">Resume Upload</label>
                   <input type="file" id="resume" name="resume" accept="application/pdf">
-                  <p class="help-block text-white">PDF format only. 2MB or less.</p>
+                  <p class="help-block">PDF format only. 2MB or less.</p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="form-group">
-                  <label for="picture" class="text-white">Resume Book Picture (optional)</label>
+                  <label for="picture">Resume Book Picture (optional)</label>
                   <input type="file" id="picture" name="picture" accept="image/*">
-                  <p class="help-block text-white">10MB or less.</p>
+                  <p class="help-block">10MB or less.</p>
                 </div>
               </div>
             </div>
           </div>
       </div>
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <input type="checkbox" name="agree" value="check" id="agree"> <span class="text-white"> I have read and agree to the <a href="TermsandConditionsSp16.pdf" target="_blank" class="link-yellow">Terms and Conditions.</a></span>
+        <input type="checkbox" name="agree" value="check" id="agree"> I have read and agree to the <a href="STCTermsandConditionsFall2016.pdf" target="_blank">Terms and Conditions.</a>
       </div>
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <input type="submit" class="btn btn-primary btn-yellow" value="Submit">
+        <input type="submit" class="btn btn-primary" value="Submit">
         <br>
         <br>
         <br>
