@@ -39,14 +39,14 @@
 
     function showfieldTeam(teammembers) {
       if (teammembers == 'partner') document.getElementById('optional-partner').innerHTML =
-        '<div class="form-group">' + '<label for="additional-team-member" class="text-white"> Netid of partner (max 1 partner) </label>' +
+        '<div class="form-group">' + '<label for="additional-team-member">Netid of partner (max 1 partner) </label>' +
         '<input type="text" class="form-control" id="additional-team-member" name="additionalTeamMember" maxlength="10">' + '</div>';
       else document.getElementById('optional-partner').innerHTML = '';
     }
 
     function showfieldHear(hearField) {
       if (hearField == 'Other') document.getElementById('other-input').innerHTML =
-        '<div class="form-group">' + '<label for="hear-other" class="text-white"> Please indicate how you heard of this competition </label>' + '<input type="text" class="form-control" id="hear-other" name="hearOther" maxlength="50">' +
+        '<div class="form-group">' + '<label for="hear-other"> Please indicate how you heard of this competition </label>' + '<input type="text" class="form-control" id="hear-other" name="hearOther" maxlength="50">' +
         '</div>';
       else document.getElementById('other-input').innerHTML = '';
     }
