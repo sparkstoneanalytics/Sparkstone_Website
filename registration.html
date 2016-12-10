@@ -10,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/mainstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/imageGallery.css">
   <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 
   <script>
@@ -137,13 +138,29 @@
   <div class="container-fluid background-grey">
     <div class="container">
       <div class="row">
-        <h1 class="text-white" id="form">Trading Challenge Timeline</h1>
-        <p class="text-white"> 9.5.16 - Information Session: 5pm at Kennedy Hall 1st Floor, EHub Main Room
-          <br/>9.8.16 - Information Session: 5pm at Kennedy Hall 1st Floor, EHub Main Room
-          <br/>9.9.16 - Application due at midnight
-          <br/>9.12.16 - Welcome for Registrants (Mandatory to participate)
-          <br/>9.17.16 - Education Series: How to Build Strategies
-          <br/>9.30.16 - Competition submission deadline at midnight</p>
+        <h1 class="text-white" id="form">Prior Challenges</h1>
+          <br/>
+        <p class="text-white">Congratulations to our 2016 winners, pictured below receiving their prizes from Optiver:</p>
+          <div class="box" id="box">
+                <img id="challengeImage" src="images/sparkstoneChallenge2016.jpg" alt="Apple Harvest Festival">
+                <!--Image found from http://www.downtownithaca.com/ithaca-events/Apple%20Harvest%20Festival%20Presented%20by%20Tompkins%20Trust-->
+
+                <div id="buttons">
+
+                    <span id="1" class="on"></span><!--First button is on as default-->
+                    <span id="2"></span>
+                    <span id="3"></span>
+                    <span id="4"></span>
+
+                </div>
+                <!--End of the buttons div-->
+
+                <a id="prev_image" class="tab">&lt;</a>
+
+                <a id="next_image" class="tab">&gt;</a>
+
+            </div>
+            <!--End of the box div-->
           <br/>
           <br/>
       </div>
@@ -285,6 +302,8 @@
       </div>
     </div>
   </footer>
+    
+    <script type="text/javascript"  src="js/challengePhotoGallery.js"></script>
 
 </body>
 

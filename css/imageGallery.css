@@ -1,0 +1,74 @@
+/* image gallery css*/
+
+/* general format of box div containing image gallery*/
+.box {
+    margin: auto;
+    max-width: 70%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* format images in gallery*/
+#box > img {
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* format buttons in gallery*/
+#buttons {
+    position: relative;
+    z-index: 2;
+    width: 20%;
+    height: 10px;
+    margin: auto;
+    padding: 10px;
+}
+
+#buttons > span {
+    cursor: pointer;
+    float: left;
+    border: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    margin: 5px;
+}
+
+#buttons .on {
+    background: #F2D454;
+}
+
+/* format tabs in gallery*/
+.tab {
+    width: 6%;
+    cursor: pointer;
+    display: block;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+    line-height: 175%;
+    text-decoration: none;
+    top: 50%;
+}
+
+.tab:hover {
+    background: rgba(0,0,0,.7);
+}
+
+#next_image {
+    right: 0px;
+}
+
+#prev_image {
+    left: 0px;
+}
+
+.box:hover .tab {
+    display: block;
+}
