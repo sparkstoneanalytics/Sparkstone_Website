@@ -3,14 +3,15 @@
 /* general format of box div containing image gallery*/
 .box {
     margin: auto;
-    max-width: 70%;
+    max-width: 90%;
     position: relative;
     overflow: hidden;
+    padding-bottom: 2em;
 }
 
 /* format images in gallery*/
 #box > img {
-    max-width: 70%;
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto
@@ -22,8 +23,10 @@
     z-index: 2;
     width: 20%;
     height: 10px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
+    padding-left: 2.1em;
 }
 
 #buttons > span {
@@ -34,7 +37,21 @@
     height: 10px;
     border-radius: 50%;
     background: white;
-    margin: 5px;
+    margin: 3%;
+}
+
+@media (max-width: 600px) {
+    #buttons {
+        width: 40%;
+    }
+    #buttons >span {
+        width: 8px;
+        height: 8px;
+        margin: 5%;
+    }
+    #challengeImage {
+        width: 80%;
+    }
 }
 
 #buttons .on {

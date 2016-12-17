@@ -50,8 +50,12 @@ h1{
 	font-family: 'Josefin Sans', sans-serif;
 	border-bottom: solid #F2D454;
 }
+h4 {
+    font-size: 1.2em;
+}
 h5{
-	padding: 2em;
+	padding: 1em;
+    font-size: 140%;
 }
 #errorAlert, #errorInternalAlert, #fileErrorAlert, #successAlert {
   display: none;
@@ -151,8 +155,8 @@ p.centered {
 	margin: 4.5% 0 4.5% 7.5%;
 }
 .headshot{
-	width:100%;
-	height:100%;
+	width:75%;
+	height:75%;
 	margin:auto;
 	display:block;
 	object-fit: contain;
@@ -166,7 +170,7 @@ p.centered {
 	border: 1px solid white;
 }
 .headshot2:hover{
-	border: 1px solid #F2D454;
+	border: 5px solid #F2D454;
 }
 
 .help-block {
@@ -255,7 +259,7 @@ p.centered {
     visibility: visible;
 }
 #custom-nav #branding{
-	visibility: hidden;
+	visibility: visible;
 }
 #custom-nav2{
 	background-color: rgba(0,0,0,0.8);
@@ -266,10 +270,16 @@ p.centered {
 	border: none;
 }
 .navbar-default .navbar-toggle{
-    background-color: white;
+    background-color: transparent;
+    width: 3.0em;
+    height: 100%;
+}
+.navbutton {
+    width: 1.5em;
+    height: 1.5em;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
-    background-color: white;
+    background-color: transparent;
 }
 .navbar-default {
   background-color: #000000;
@@ -313,14 +323,12 @@ p.centered {
   background-color: #000000;
 }
 .navbar-default .navbar-toggle {
-  border-color: #000000;
+  border-color: transparent;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #000000;
+  background-color: transparent;
 }
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff;
-}
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #ffffff;
@@ -332,7 +340,7 @@ p.centered {
   color: #ffffff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;
   }
@@ -361,11 +369,11 @@ form label {
 }
 
 .container-fluid {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .spacing {
-  padding-top: 120px;
+  padding-top: 10px;
 }
 
 nav div {
