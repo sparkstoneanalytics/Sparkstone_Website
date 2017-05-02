@@ -8,15 +8,6 @@ html {
   min-height: 100%;
 }
 
-a {
-    color: white;
-    text-decoration: underline;
-}
-
-a:hover {
-    font-weight: bold;
-}
-
 .jumbotron{
 	color:white;
 }
