@@ -103,6 +103,7 @@ p{
 }
 p.centered {
   text-align: center;
+  margin: auto;
 }
 .site-footer{
 	position: absolute;
